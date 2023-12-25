@@ -16,6 +16,7 @@ CREATE TABLE if not exists revenu(
 	id SERIAL PRIMARY KEY,
 	name TEXT,
 	amount DECIMAL(10, 2),
+	userId int,
 	createdAt DATE,
 	updatedAt DATE
 );
@@ -24,6 +25,7 @@ CREATE TABLE if not exists expense(
 	id SERIAL PRIMARY KEY,
 	name TEXT,
 	amount DECIMAL(10, 2),
+	userId int,
 	createdAt DATE,
 	updatedAt DATE
 );
